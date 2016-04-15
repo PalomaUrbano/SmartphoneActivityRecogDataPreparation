@@ -1,0 +1,45 @@
+This script prepares the Smartphone Human Activity Data for further analysis
+The raw data needs to be downloaded from http://archive.ics.uci.edu/ml/machine-learning-databases/00240/
+
+The summary data is found at the file SummaryActivityMeasurements.txt
+
+This is a preview of the head of the file:
+
+    "subject" "activityname" "measure" "average"
+    "1" 1 "LAYING" "fBodyAcc-mean()-X" -0.9390990524
+    "2" 1 "LAYING" "fBodyAcc-mean()-Y" -0.86706520518
+    "3" 1 "LAYING" "fBodyAcc-mean()-Z" -0.8826668762
+    "4" 1 "LAYING" "fBodyAcc-std()-X" -0.9244374346
+    "5" 1 "LAYING" "fBodyAcc-std()-Y" -0.8336255561
+
+
+The file has the folowing attributes:
+
+# of the row. Example "1", "2", etc.
+subject - Human that perform the test or training. Represented by a number such as 1, 2, 3, etc...I guess for privacy
+activityname - Type of activity. There are 6 types of activities measured:
+      LAYING 
+      SITTING 
+      STANDING 
+      WALKING 
+      WALKING_DOWNSTAIRS 
+      WALKING_UPSTAIRS
+measure - This is a list of all the measurements recorded. There are 561 measurements recorded. Here are some examples:
+    tBodyAcc-mean()-X 
+    tBodyAcc-mean()-Y 
+    tBodyAcc-mean()-Z 
+    tBodyAcc-std()-X  
+    tBodyAcc-std()-Y 
+    tBodyAcc-std()-Z  
+average - This is the calculated mean for each measurement recorded organized by activity type and human subject
+
+So how should we interpreted this data, let's take the first few calculations:
+subject" "activityname" "measure" "average"
+    "1" 1 "LAYING" "fBodyAcc-mean()-X" -0.9390990524
+    "2" 1 "LAYING" "fBodyAcc-mean()-Y" -0.86706520518
+    "3" 1 "LAYING" "fBodyAcc-mean()-Z" -0.8826668762
+    
+They are telling us that Subject 1 (let's call him John), while Laying, the average values of the Body Accelerometer are
+for X = -0.9390990524, Y = -0.86706520518, Z = -0.88266687623
+wow, I wander how they compare with my fitbit!
+
