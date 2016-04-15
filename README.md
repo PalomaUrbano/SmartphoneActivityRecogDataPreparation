@@ -6,6 +6,7 @@ This run_analysis.R script assumes that you have:
 1) downloaded the data into your computer (if you need to download the data refer to http://archive.ics.uci.edu/ml/machine-learning-databases/00240/)
 
 2) you have set up your environment to the top folder of the downloaded and unzip data folder. It is called "UC HAR Dataset".
+
 To test that you are in the right directory try the following:
 
 > getwd()
