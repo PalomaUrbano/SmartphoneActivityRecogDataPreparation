@@ -9,6 +9,7 @@ This run_analysis.R script assumes that you have:
 To test that you are in the right directory try the following:
 
 > getwd()
+
 It should  return sothing like:
 >"...your directory.../UCI HAR Dataset"
 
@@ -21,14 +22,14 @@ You may want to view the final summary data set by typing the following:
 
 
 
-  subject activityname           measure    average
-    (int)       (fctr)             (chr)      (dbl)
-1       1       LAYING fBodyAcc-mean()-X -0.9390991
-2       1       LAYING fBodyAcc-mean()-Y -0.8670652
-3       1       LAYING fBodyAcc-mean()-Z -0.8826669
-4       1       LAYING  fBodyAcc-std()-X -0.9244374
-5       1       LAYING  fBodyAcc-std()-Y -0.8336256
-6       1       LAYING  fBodyAcc-std()-Z -0.8128916
+    subject activityname           measure    average
+      (int)       (fctr)             (chr)      (dbl)
+        1       1       LAYING fBodyAcc-mean()-X -0.9390991
+        2       1       LAYING fBodyAcc-mean()-Y -0.8670652
+        3       1       LAYING fBodyAcc-mean()-Z -0.8826669
+        4       1       LAYING  fBodyAcc-std()-X -0.9244374
+        5       1       LAYING  fBodyAcc-std()-Y -0.8336256
+        6       1       LAYING  fBodyAcc-std()-Z -0.8128916
 
 
 The script run_analysis.R has embedded comments explaining every step, if you are interested in the details
