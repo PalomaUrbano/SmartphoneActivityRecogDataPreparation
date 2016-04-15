@@ -16,9 +16,8 @@ Once you have the data set unpacked and the script in the correct directory, you
 You may want to view the final summary data set by typing the following:
 
 > View(s_vargs)
+
 > head(s_vargs)
-Source: local data frame [6 x 4]
-Groups: subject, activityname [1]
 
 
 
